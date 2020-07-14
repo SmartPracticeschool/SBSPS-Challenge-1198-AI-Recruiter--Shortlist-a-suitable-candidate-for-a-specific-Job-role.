@@ -1,4 +1,4 @@
-This is the Flask app for my project. 
+<B>This is the Flask app for my project. </B>
 
 To use the app, download this flask app folder.
  
