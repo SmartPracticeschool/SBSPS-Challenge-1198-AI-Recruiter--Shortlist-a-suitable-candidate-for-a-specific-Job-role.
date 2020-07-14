@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+  <title>My Model</title>
+  </head>
+ <body style="background: url(https://www.wallpaperflare.com/static/341/235/728/minimalism-robot-black-background-artwork-wallpaper.jpg); background-size: 100%;"> 
+   <!-- <body style="background: #FC766AFF;"> -->
+<div class="container" style="width: 1500px; margin:0 auto;">
+      <div class="header">
+         <br>
+        <h1 class="text-muted" style="color:white; text-align:center;">IBM HACK Challenge 2020 Submission</h1>
+        <hr style ="width:100% ;"/>
+        <h3 class="text-muted" style="color:white; text-align:center;">AI Recruiter - Shortlisting a Candidate based on Resume (Team Blackswans)</h3>
+        <hr/>
+      </div>
+      <div>
+      <p style="color:white; text-align:center;"><B>Please upload your resume/CV. (Keep it in .txt format)</B></p>
+      <form action="upload" method="post" enctype="multipart/form-data">
+        <input type="file" multiple="" name="file[]" size="60">
+         <br>
+        <input type="submit" value="Upload your Resume for Analysis" style="color:white;background-color:#24a0ed; solid #336600; font-size:30px; text-align:center; width:100%">
+      </form>
+      <br>
+      <br>
+
+      <p style="color:white; text-align: center; font-size:30px"><B>{{prediction_text}}</B></p>
+      
+
+      </div>
+      
+       <div>
+      <ul>
+        {% for file in filenames %}
+          <li><a href="{{url_for('uploaded_file', filename=file)}}">{{file}}</a></li>
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+    <footer>
+    <p style="text-align:right; font-size:15px; width: 1500px; margin:0 auto; color:white;">*Please refer to readme for more information regarding this.</p>
+    </footer>  
+</body>
+</html>
+ 
