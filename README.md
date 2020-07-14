@@ -16,4 +16,4 @@ The way we will be handling the workflow of the project is that
 4. Deploying the Model
 
 
-Note - Majorcodefinal.py contains all the backend code for this project and the web app is present in the flask_app folder.
+<B>Note - Majorcodefinal.py contains all the backend code for this project and the web app is present in the flask_app folder.</B>
